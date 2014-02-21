@@ -1,0 +1,25 @@
+how to add a language:
+----------------------
+If you want to add language xy, run 
+$ ./updatelang.php xy
+then, translate all strings in xy/syp.php
+
+how to update a language:
+-------------------------
+If you want to update language xy, run 
+$ ./updatelang.php xy
+then, translate empty strings xy/syp.php
+
+how to remove a language:
+-------------------------
+If you want to remove language xy, remove xy directory, and unlink symbolic
+links in root directory:
+$ rm -r xy/
+$ rm ../../*.xy.php
+
+*******************
+* IMPORTANT NOTES *
+*******************
+
+- you can split a translated string in several lines, but it must stay a php string:
+  use a dot (".") to tell the php interpreter that string is not finished.

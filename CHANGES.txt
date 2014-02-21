@@ -1,0 +1,29 @@
+v0.1
+----
+- better separation between client and server
+- allow to have items without an image
+- internatinalisation and english translation
+- rss feed
+
+v0.2
+----
+- when markers are too close, show one big marker
+- when a photo is uploaded, a thumbnail is created. That thumbnail is displayed
+  in popup. When image in thumbnail is clicked, large size image is displayed
+  (nearly) full screen.
+- option to show popup near marker.
+- use of Etag header
+
+v0.3
+----
+- multi users administration
+- improve wizard: hand editing of setting.php is no more mandatory to set SYP
+- web ui to change password
+- option to show popup near any corner.
+
+v0.4
+----
+- custom css rules
+- show number of features on cluster markers
+- when selecting a cluster, zoom until features are detached
+- postgresql support as a database backend
