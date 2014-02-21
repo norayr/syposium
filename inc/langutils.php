@@ -1,6 +1,9 @@
 <?php
 /* Copyright (c) 2009 Arnaud Renevier, Inc, published under the modified BSD
    license. */
+// Report all errors except E_NOTICE   
+//error_reporting(E_ALL ^ E_NOTICE &  );
+error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
 
     $language_list = Array ();
 

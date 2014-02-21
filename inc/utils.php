@@ -1,7 +1,7 @@
 <?php
 /* Copyright (c) 2009 Arnaud Renevier, Inc, published under the modified BSD
    license. */
-
+error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
 // using include because that file may be sourced even if config file has not
 // been created.
 @include_once ("inc/settings.php");
@@ -27,11 +27,15 @@ function gethost () {
 
 function ext_safe ($path) {
     $basename = basename_safe ($path);
-    return end (explode (".", $basename)); 
+    //return end (explode (".", $basename)); 
+    $noch_dot=".";
+    return end (explode ($noch_dot, $basename)); 
 }
 
 function basename_safe ($path) {
-    return end (explode ("/", $path)); 
+    //return end (explode ("/", $path)); 
+    $noch_slash = "/";
+    return end (explode ($noch_slash, $path)); 
 }
 
 function unquote($gpc_str) {

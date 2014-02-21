@@ -2,6 +2,8 @@
 /* Copyright (c) 2009 Arnaud Renevier, Inc, published under the modified BSD
    license. */
 
+error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
+
 function exit_document ($body) {
     $charset_meta = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">';
     exit ("<html>$charset_meta<head></head><body>$body</body></html>");

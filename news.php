@@ -1,6 +1,7 @@
 <?php
 /* Copyright (c) 2009 Arnaud Renevier, Inc, published under the modified BSD
    license. */
+error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
 
 function headers_callback ($output) {
     $etag = md5 ($output);
